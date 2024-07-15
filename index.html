@@ -5,28 +5,116 @@
     <title>Exceptional Realty Group - Luxury Homes - About</title>
     <!-- Don't forget to link your CSS file! -->
   </head>
+
+  <style>
+#details{
+  overflow: auto;
+  padding: 20px 0;
+}
+
+.details-item{
+  float: left;
+  width: 23%;
+  margin: 1%;
+  box-sizing: border-box;
+}
+
+.details-item h3{
+  margin-top: 0;
+
+}
+
+.details-item p{
+  margin-bottom: 0;
+}
+
+  </style>
+  <link rel="stylesheet" href="./style.css">
   <body>
     <header>
+  
       <!-- logo -->
       <h1>Exceptional Realty Group</h1>
-
+      
+      <style> header {text-align:center;} </style>
+      
+      <style
       <nav>
-        <a href="index.html">About</a> <a href="new-properties.html">New Properties</a> <a href="real-estate-listings.html">Listings</a> <a href="market-report.html">Market Report</a> <a href="contact.html">Contact</a> <a href="http://hud.gov" target="_blank">H.U.D.</a>
+
+        nav { display : flex;
+              justify-content: center}
+
+        nav a { padding: 10px;
+          background-color: grey;
+      
+        }      
+      
+
+
+        <a href="index.html"> About</a> 
+        <a href="new-properties.html">New Properties</a>
+        <a href="real-estate-listings.html">Listings</a>
+        <a href="market-report.html">Market Report</a>
+        <a href="contact.html">Contact</a> 
+        <a href="http://hud.gov" target="_blank">H.U.D.</a>
       </nav>
+
+      </style>
     </header>
 
     <section id="featured-property">
+
+<style>
+      #featured-property {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featured-text {
+  width: 800px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+
+</style>
+
+
+      <style>
+        figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0 auto; 
+        }
+
+        img {
+            max-width: 100%;  
+            height: auto;}
+        
+    </style>
+
+
+
+
       <figure>
         <img src="images/intro-pic.jpg" alt="A beautiful living room." title="Welcome to Exceptional Realty Group">
-        <figcaption>345 Carl Street Apt 12, Carrol Rd. Brooklyn, NY - Photo by Denise Richards.</figcaption>
+        <figcaption  class="image-caption"> Carl Street Apt 12, Carrol Rd. Brooklyn, NY - Photo by Denise Richards.</figcaption> 
+      
+      
       </figure>
 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, perferendis nisi nihil debitis aspernatur doloribus quam eveniet quibusdam tempora esse! Repudiandae, assumenda, debitis doloribus ea eius ab at quae totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, inventore aliquid ipsam debitis nulla vitae omnis nemo quisquam? Obcaecati dolor ipsum distinctio reprehenderit aliquid autem ea vel provident voluptas nisi.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, natus, nobis, tempore recusandae culpa deleniti dignissimos laborum perspiciatis exercitationem obcaecati dolores unde eveniet eius debitis perferendis provident porro. Ipsum, placeat.</p>
+     <style> .image-caption {font-size:14px;
+      text-align: center} </style>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, perferendis nisi nihil debitis aspernatur doloribus quam eveniet quibusdam tempora esse! Repudiandae, assumenda, debitis doloribus ea eius ab at quae totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, inventore aliquid ipsam debitis nulla vitae omnis nemo quisquam? Obcaecati dolor ipsum distinctio reprehenderit aliquid autem ea vel provident voluptas nisi.</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, natus, nobis, tempore recusandae culpa deleniti dignissimos laborum perspiciatis exercitationem obcaecati dolores unde eveniet eius debitis perferendis provident porro. Ipsum, placeat.</p>
     </section>
 
     <section id="details">
-      <div>
+      <div class="details-item">
         <h3>Contact</h3>
         <p>
           <a href="mailto:info@exceptionalrealty.com">info@exceptionalrealty.com</a><br>
@@ -35,7 +123,7 @@
         </p>
       </div>
       
-      <div>
+      <div class="details-item">
         <h3>Correspondence</h3>
         <p>
           Exceptional Realty<br>
@@ -44,7 +132,7 @@
         </p>
       </div>
 
-      <div>
+      <div class="details-item">
         <h3>Links</h3>
         <p>
           <a href="#" target="_blank">Home Restoration</a><br>
@@ -53,7 +141,7 @@
         </p>
       </div>
 
-      <div>
+      <div class="details-item">
         <h3>Follow</h3>
         <p>
           <a href="#" target="_blank">YouTube</a><br>
